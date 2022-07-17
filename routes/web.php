@@ -16,18 +16,8 @@ use App\Http\Controllers\ProductController ;
 */
 
 Route::get('/', function () {
-    $myvar = [
-        "osama",
-        "ali",
-        "george",
-        "mike"
-    ];
-        return view('welcome',['myvar'=>$myvar]);
+    
+        return view('welcome');
 });
-
-Route::get('/products',[ProductController::class,'index']);
-//Route::get('/products','App\Http\Controllers\ProductController@index');
-
-//Route::get('/products','ProductController@index');
 
 
