@@ -6,6 +6,13 @@
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
     </p>
+
+
+    <a href="/products">Go check my Products </a>
+
+
   </main>
+
+
 
 @endsection
