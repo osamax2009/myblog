@@ -21,6 +21,9 @@ Route::get('/', function(){
 Route::view('homepage','welcome');
 
 Route::get('/products',[ProductController::class,'index']);
+Route::get('/createp',[ProductController::class,'create']);
+Route::post('/createproduct',[ProductController::class,'store']);
+
 
 
 Route::view('pageone', 'testpages.pageone');

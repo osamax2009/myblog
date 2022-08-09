@@ -6,6 +6,9 @@
     <h1 style="color: blueviolet">Our Products... </h1>
     </br>
     </br>
+      <div class="row row-cols-1 row-cols-md-3">
+        <a class="btn btn-danger" href="/createp" >Create new product</a>
+      </div>
     <div class="row row-cols-1 row-cols-md-3  g-4">
         @foreach ($products as $item)
                <div class="col-sm d-flex">
