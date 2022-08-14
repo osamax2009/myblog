@@ -2,7 +2,7 @@
 @section('content')
     <main class="px-3">
         <h1>Register</h1>
-        <form action="" method="POST">
+        <form action="/register" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group  mb-3 ">
                 <input type="text" class="form-control" name='email' placeholder="Enter your email">
