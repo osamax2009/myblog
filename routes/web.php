@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
-
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +26,13 @@ Route::post('/createproduct',[ProductController::class,'store']);
 
 
 
+
+
 Route::view('pageone', 'testpages.pageone');
 Route::view('pagetwo', 'testpages.pagetwo');
 
+
+Route::group(['middleware'=>['guest']],function(){
+        Route::get('/register',[AuthController::class,'show']);
+        Route::post('/register',[AuthController::class,'register']);
+});
